@@ -60,7 +60,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         {
             let csv = try CSV(contentsOfURL: path!)
             let rows = csv.rows
-            print(rows)
             
             for row in rows
             {

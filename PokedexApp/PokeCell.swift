@@ -21,8 +21,13 @@ class PokeCell: UICollectionViewCell
         
         thumbImage.image = UIImage(named: String(self.pokemon.pokedexID))
         thumbLabel.text = self.pokemon.name.capitalized
-        
+        cellStyling()
+    }
+    
+    func cellStyling()
+    {
         self.layer.cornerRadius = 20.0
+        self.layer.borderWidth = 0.5
         self.clipsToBounds = true
     }
 }
